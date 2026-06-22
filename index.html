@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miyabi Matcha — Amsterdam · Authentic Japanese Matcha</title>
+  <meta name="description" content="Miyabi Matcha brings the authentic taste of Japan to your cup. Now open in Chinatown, Amsterdam — Zeedijk 127. Daily 10:00–22:00." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="has-hero">
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav nav--hero">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">雅</span>
+      <span class="brand__txt">
+        <span class="brand__name">Miyabi Matcha</span>
+        <span class="brand__sub">Amsterdam</span>
+      </span>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+      <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="matcha.html" data-i18n="nav.matcha">Our Matcha</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+      <li class="nav__lang-li">
+        <div class="lang" role="group" data-i18n-aria="nav.language" aria-label="Language">
+          <button type="button" class="lang__btn" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang__btn" data-lang-option="nl" aria-pressed="false">NL</button>
+          <button type="button" class="lang__btn" data-lang-option="ja" aria-pressed="false">JA</button>
+          <button type="button" class="lang__btn" data-lang-option="fr" aria-pressed="false">FR</button>
+        </div>
+      </li>
+    </ul>
+    <button class="nav__toggle" data-i18n-aria="nav.openMenu" aria-label="Open menu"
+            aria-controls="nav-links" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="hero__media">
+      <img src="https://images.pexels.com/photos/32695045/pexels-photo-32695045.jpeg?auto=compress&cs=tinysrgb&w=1600"
+           alt="Iced matcha latte with a bamboo whisk and fresh greenery" onerror="this.style.display='none'" />
+    </div>
+    <div class="hero__scrim"></div>
+    <div class="hero__inner wrap">
+      <div class="hero__mark kanji">雅</div>
+      <h1 data-i18n-html="hero.h1">Bringing the authentic taste of <em>Japan</em> to your cup.</h1>
+      <p class="hero__sub" data-i18n="hero.sub">Carefully sourced from trusted tea farms in Japan and served fresh in the heart of Amsterdam.</p>
+      <div class="hero__cta">
+        <a href="menu.html" class="btn btn--light" data-i18n="hero.viewMenu">View the Menu</a>
+        <a href="index.html#visit" class="btn btn--ghost" style="color:#f6f4ea;border-color:rgba(246,244,234,.5)" data-i18n="hero.findUs">Find Us</a>
+      </div>
+    </div>
+    <div class="hero__scroll"><span data-i18n="hero.scroll">Scroll</span><span></span></div>
+  </header>
+
+  <!-- ===================== INTRO + REVIEWS ===================== -->
+  <section class="section bg-paper">
+    <div class="wrap center">
+      <p class="eyebrow reveal" data-i18n="intro.eyebrow">From Japan, with care</p>
+      <h2 class="reveal" data-delay="1" data-i18n="intro.h2" style="font-size:clamp(2rem,4.5vw,3.4rem);max-width:18ch;margin:.5rem auto 0;">
+        The essence of matcha, brought to Europe.
+      </h2>
+      <div class="divider reveal" data-delay="1"></div>
+
+      <!-- rotating 5★ reviews -->
+      <div class="reviews reveal" data-delay="2" data-carousel data-i18n-aria="rev.label" aria-label="Customer reviews">
+        <figure class="review active" data-slide>
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.1">“The best matcha I’ve had outside of Japan — smooth, vivid and never bitter.”</blockquote>
+          <figcaption class="review__by">Sofie · Amsterdam</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.2">“A little pocket of calm on the Zeedijk. The ceremonial bowl is the real deal.”</blockquote>
+          <figcaption class="review__by">Daan · Amsterdam</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.3">“Their strawberry matcha is unreal. I come back every single week.”</blockquote>
+          <figcaption class="review__by">Yuki · Amsterdam</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.4">“You can taste the quality — clearly sourced with real care.”</blockquote>
+          <figcaption class="review__by">Marco · Utrecht</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.5">“Beautiful space, beautiful tea. The brown sugar matcha is my new addiction.”</blockquote>
+          <figcaption class="review__by">Emma · Haarlem</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.6">“Finally, authentic matcha in Amsterdam. Felt like Kyoto for a moment.”</blockquote>
+          <figcaption class="review__by">Liam · Amsterdam</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.7">“The staff are lovely and clearly passionate about what they pour.”</blockquote>
+          <figcaption class="review__by">Noor · Amsterdam</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.8">“The hojicha latte is warm, nutty perfection on a grey day.”</blockquote>
+          <figcaption class="review__by">Pieter · Amsterdam</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.9">“From Paris to Amsterdam — so glad they made the move. Magnifique.”</blockquote>
+          <figcaption class="review__by">Camille · Amsterdam</figcaption>
+        </figure>
+        <figure class="review" data-slide>
+          <div class="review__stars">★★★★★</div>
+          <blockquote class="review__txt" data-i18n="rev.10">“Every cup feels a little more special. Exactly as they promise.”</blockquote>
+          <figcaption class="review__by">Aiko · Amsterdam</figcaption>
+        </figure>
+      </div>
+
+      <p class="lead reveal" data-delay="2" data-i18n="intro.lead" style="margin-inline:auto;">
+        Our matcha is carefully sourced from trusted tea farms in Japan and delivered to
+        matcha lovers across Europe. Born in Paris, now pouring in Amsterdam.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED MENU CAROUSEL ===================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <div class="feature-frame" data-carousel aria-label="Featured menu items">
+            <div class="feature-tag" data-i18n="feat.tag">Featured</div>
+            <div class="feature-slide active" data-slide>
+              <img src="https://images.pexels.com/photos/8474182/pexels-photo-8474182.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                   alt="A bowl of pure ceremonial matcha with a bamboo whisk" onerror="this.style.opacity=0" />
+              <div class="feature-cap"><span class="nm">Pure Matcha</span><span class="pr">€5.00</span></div>
+            </div>
+            <div class="feature-slide" data-slide>
+              <img src="https://images.pexels.com/photos/32972501/pexels-photo-32972501.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                   alt="A refreshing iced matcha latte" onerror="this.style.opacity=0" />
+              <div class="feature-cap"><span class="nm">Matcha Latte</span><span class="pr">€7.00</span></div>
+            </div>
+            <div class="feature-slide" data-slide>
+              <img src="https://images.pexels.com/photos/5946969/pexels-photo-5946969.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                   alt="A glass of iced brown sugar matcha" onerror="this.style.opacity=0" />
+              <div class="feature-cap"><span class="nm">Brown Sugar Matcha</span><span class="pr">€7.00</span></div>
+            </div>
+            <div class="feature-dots">
+              <i class="on" data-dot></i><i data-dot></i><i data-dot></i>
+            </div>
+          </div>
+        </div>
+        <div class="split__body reveal" data-delay="1">
+          <p class="split__num" data-i18n="feat.num">From the bar</p>
+          <h2 data-i18n="feat.h2">A few of our favourites</h2>
+          <div class="divider"></div>
+          <p data-i18n="feat.p1">Whisked fresh to order from the same ceremonial-grade leaves we source in Japan —
+            from a pure bowl of matcha to our beloved iced lattes.</p>
+          <p data-i18n="feat.p2">There’s a whole menu waiting: matcha, hojicha, coffee, cloud & cream drinks, fruit teas and crêpes.</p>
+          <a href="menu.html" class="btn" data-i18n="feat.cta">View the full menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CHINATOWN ===================== -->
+  <section class="section bg-cream2">
+    <div class="wrap">
+      <div class="split split--reverse">
+        <div class="split__media reveal">
+          <img src="https://images.pexels.com/photos/8134134/pexels-photo-8134134.jpeg?auto=compress&cs=tinysrgb&w=1100"
+               alt="A signature strawberry matcha drink" onerror="this.style.opacity=0" />
+        </div>
+        <div class="split__body reveal" data-delay="1">
+          <p class="split__num" data-i18n="cn.num">Now open</p>
+          <h2 data-i18n="cn.h2">Find us in Chinatown</h2>
+          <div class="divider"></div>
+          <p data-i18n-html="cn.p1">Located in Chinatown, <strong>Miyabi Matcha from Paris</strong> is now here in Amsterdam.
+            Step in from the Zeedijk for a freshly whisked bowl, an iced latte, or a moment of calm.</p>
+          <p data-i18n="cn.hours" style="font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--matcha-deep);">
+            Open daily · 10:00 – 22:00
+          </p>
+          <a href="index.html#visit" class="btn" data-i18n="cn.cta">Plan your visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PHILOSOPHY QUOTE ===================== -->
+  <section class="section bg-ink quote">
+    <div class="wrap">
+      <p class="eyebrow reveal" data-i18n="phil.eyebrow">雅 · Miyabi — elegance</p>
+      <div class="divider reveal" data-delay="1"></div>
+      <p class="reveal" data-delay="1" data-i18n="phil.quote">“We cherish the beauty that lives in quiet moments.”</p>
+      <p class="reveal" data-delay="2" data-i18n="phil.body" style="margin-top:1.6rem;color:rgba(243,241,230,.78);font-family:var(--sans);font-style:normal;font-size:1rem;max-width:52ch;margin-inline:auto;">
+        Our tea is more than a drink — it’s a moment to restore the mind and spirit.
+        In the rush of everyday life, we offer a quiet pause, a gentle breath.
+      </p>
+      <a href="about.html" class="btn btn--light reveal" data-delay="3" data-i18n="phil.cta" style="margin-top:2.2rem;">Our story</a>
+    </div>
+  </section>
+
+  <!-- ===================== DIY PLUG (small) ===================== -->
+  <section class="section--tight bg-paper">
+    <div class="wrap center">
+      <p class="eyebrow reveal" data-i18n="diy.eyebrow">Do it yourself?</p>
+      <h2 class="reveal" data-delay="1" data-i18n="diy.h2" style="font-size:clamp(1.8rem,4vw,2.8rem);margin:.4rem 0 1rem;">Make Miyabi at home</h2>
+      <p class="lead reveal" data-delay="1" data-i18n="diy.lead" style="margin:0 auto 1.6rem;">Take home the same ceremonial matcha we whisk in store.</p>
+      <a href="matcha.html" class="btn reveal" data-delay="2" data-i18n="diy.cta">Our matcha</a>
+    </div>
+  </section>
+
+  <!-- ===================== VISIT / LOCATION ===================== -->
+  <section class="section--tight" id="visit">
+    <div class="locate">
+      <div class="locate__info">
+        <p class="eyebrow" data-i18n="visit.eyebrow">Visit us</p>
+        <h2 data-i18n="visit.h2">Find us on the Zeedijk</h2>
+        <div class="locate__row">
+          <span class="ic">◎</span>
+          <span><strong>Miyabi Matcha Amsterdam</strong>Zeedijk 127, 1012 AW Amsterdam, Netherlands</span>
+        </div>
+        <div class="locate__row">
+          <span class="ic">◷</span>
+          <span><strong data-i18n="visit.openLabel">Open daily</strong>10:00 – 22:00</span>
+        </div>
+        <div class="locate__row">
+          <span class="ic">✉</span>
+          <span><strong data-i18n="visit.helloLabel">Say hello</strong>hello@miyabimatcha.nl</span>
+        </div>
+        <div class="locate__socials">
+          <a href="https://www.instagram.com/miyabimatcha.amsterdam/" target="_blank" rel="noopener">◈ Instagram</a>
+          <a href="https://maps.google.com/?q=Zeedijk+127,+1012+AW+Amsterdam" target="_blank" rel="noopener" data-i18n="visit.directions">◹ Directions</a>
+        </div>
+      </div>
+      <div class="locate__map">
+        <iframe
+          title="Map to Miyabi Matcha Amsterdam, Zeedijk 127"
+          src="https://www.google.com/maps?q=Zeedijk%20127,%201012%20AW%20Amsterdam,%20Netherlands&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="brand__mark kanji">雅</span>
+          <p data-i18n="footer.brandText">Miyabi Matcha — bringing the authentic taste of Japan to your cup, from Paris to Amsterdam.</p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="matcha.html" data-i18n="nav.matcha">Our Matcha</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.visit">Visit</h4>
+          <p>Zeedijk 127</p>
+          <p>1012 AW Amsterdam</p>
+          <p data-i18n="footer.hours">Daily · 10:00 – 22:00</p>
+          <a href="https://www.instagram.com/miyabimatcha.amsterdam/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n-html="footer.rights">© <span id="year">2026</span> Miyabi Matcha Amsterdam. All rights reserved.</span>
+        <span class="footer__credit">sample by <a href="https://www.instagram.com/_ziyad._/" target="_blank" rel="noopener">_ziyad._</a> @ code-caffeine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

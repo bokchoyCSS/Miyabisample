@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Miyabi Matcha Amsterdam</title>
+  <meta name="description" content="The Miyabi Matcha menu — matcha, hojicha & genmaicha, coffee, cloud & cream drinks, fruit teas and crêpes. Zeedijk 127, Amsterdam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav nav--solid">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">雅</span>
+      <span class="brand__txt">
+        <span class="brand__name">Miyabi Matcha</span>
+        <span class="brand__sub">Amsterdam</span>
+      </span>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="menu.html" class="active" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="matcha.html" data-i18n="nav.matcha">Our Matcha</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+      <li class="nav__lang-li">
+        <div class="lang" role="group" data-i18n-aria="nav.language" aria-label="Language">
+          <button type="button" class="lang__btn" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang__btn" data-lang-option="nl" aria-pressed="false">NL</button>
+          <button type="button" class="lang__btn" data-lang-option="ja" aria-pressed="false">JA</button>
+          <button type="button" class="lang__btn" data-lang-option="fr" aria-pressed="false">FR</button>
+        </div>
+      </li>
+    </ul>
+    <button class="nav__toggle" data-i18n-aria="nav.openMenu" aria-label="Open menu"
+            aria-controls="nav-links" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== PAGE HEAD ===================== -->
+  <header class="pagehead">
+    <span class="kanji-bg">茶</span>
+    <p class="eyebrow" data-i18n="menu.eyebrow">Café · Zeedijk 127</p>
+    <h1 data-i18n="menu.h1">The Menu</h1>
+    <p class="lead center" data-i18n="menu.lead" style="margin:.6rem auto 0;">Whisked fresh to order. Every cup begins with the same ceremonial-grade matcha we source from Japan.</p>
+  </header>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="section menu-section">
+    <div class="wrap">
+      <div class="menu-grid">
+
+        <!-- Column 1 -->
+        <div>
+          <div class="menu-cat reveal">
+            <div class="menu-cat__head">
+              <h3 data-i18n="menu.tea">Tea</h3><span class="jp">抹茶 · ほうじ茶 · 玄米茶</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name" data-i18n="menu.pure">Pure</span>
+              <span class="menu-item__price">€5.00</span>
+              <span class="menu-item__desc" data-i18n="menu.pureDesc">Matcha · Hojicha · Genmaicha — whisked, nothing added.</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Latte<span class="tag" data-i18n="tag.bestseller">Bestseller</span></span>
+              <span class="menu-item__price">€7.00</span>
+              <span class="menu-item__desc" data-i18n="menu.latteDesc">Matcha · Hojicha · Genmaicha, hot or iced.</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Brown Sugar</span>
+              <span class="menu-item__price">€7.00</span>
+              <span class="menu-item__desc" data-i18n="menu.brownDesc">Matcha · Hojicha · Genmaicha with caramelised brown sugar.</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Earl Grey</span>
+              <span class="menu-item__price">€7.00</span>
+              <span class="menu-item__desc" data-i18n="menu.earlDesc">Matcha · Hojicha · Genmaicha, infused with bergamot.</span>
+            </div>
+          </div>
+
+          <div class="menu-cat reveal" data-delay="1">
+            <div class="menu-cat__head">
+              <h3 data-i18n="menu.coffee">Coffee</h3><span class="jp">珈琲</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Espresso</span><span class="menu-item__price">€3.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Americano</span><span class="menu-item__price">€4.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Cappuccino</span><span class="menu-item__price">€4.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Latte</span><span class="menu-item__price">€4.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Flat White</span><span class="menu-item__price">€5.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Sweet Potato Coffee Latte</span><span class="menu-item__price">€6.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Osmanthus Latte</span><span class="menu-item__price">€6.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <div class="menu-cat reveal" data-delay="1">
+            <div class="menu-cat__head">
+              <h3 data-i18n="menu.cloud">Cloud</h3><span class="jp">雲</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Matcha Cloud</span><span class="menu-item__price">€7.00</span>
+              <span class="menu-item__desc" data-i18n="menu.cloudMatchaDesc">Airy whipped cloud over a matcha base.</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Black Sesame Cloud</span><span class="menu-item__price">€7.00</span>
+              <span class="menu-item__desc" data-i18n="menu.cloudSesameDesc">Nutty, toasty black sesame under a soft cloud.</span>
+            </div>
+          </div>
+
+          <div class="menu-cat reveal" data-delay="2">
+            <div class="menu-cat__head">
+              <h3 data-i18n="menu.cream">Cream</h3><span class="jp">クリーム</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Matcha Strawberry Cream<span class="tag" data-i18n="tag.signature">Signature</span></span>
+              <span class="menu-item__price">€7.00</span>
+              <span class="menu-item__desc" data-i18n="menu.creamStrawDesc">Fresh strawberry, milk and matcha — our most-loved cup.</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Hojicha Black Sesame Cream</span><span class="menu-item__price">€6.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">White Vienna Coffee</span><span class="menu-item__price">€6.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Genmai Matcha Cream</span><span class="menu-item__price">€6.50</span>
+            </div>
+          </div>
+
+          <div class="menu-cat reveal" data-delay="2">
+            <div class="menu-cat__head">
+              <h3 data-i18n="menu.fruits">Fruits</h3><span class="jp">果実 · ジャスミン</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Mango Jasmine</span><span class="menu-item__price">€6.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Strawberry Jasmine</span><span class="menu-item__price">€6.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Blueberry Jasmine</span><span class="menu-item__price">€6.00</span>
+            </div>
+          </div>
+
+          <div class="menu-cat reveal" data-delay="3">
+            <div class="menu-cat__head">
+              <h3 data-i18n="menu.crepe">Crêpe</h3><span class="jp">クレープ</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Classic Matcha</span><span class="menu-item__price">€10.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Crème Brûlée</span><span class="menu-item__price">€11.00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="menu-note" data-i18n="menu.note">Oat, soy & coconut milk available · Prices include VAT · Menu may vary with the season.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="section--tight bg-cream2">
+    <div class="wrap center">
+      <p class="eyebrow reveal" data-i18n="menu.cta.eyebrow">Prefer to brew your own?</p>
+      <h2 class="reveal" data-delay="1" data-i18n="menu.cta.h2" style="font-size:clamp(1.8rem,4vw,2.8rem);margin:.4rem 0 1.4rem;">Take Miyabi matcha home</h2>
+      <a href="matcha.html" class="btn reveal" data-delay="2" data-i18n="menu.cta.btn">Our matcha</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="brand__mark kanji">雅</span>
+          <p data-i18n="footer.brandText">Miyabi Matcha — bringing the authentic taste of Japan to your cup, from Paris to Amsterdam.</p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="matcha.html" data-i18n="nav.matcha">Our Matcha</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.visit">Visit</h4>
+          <p>Zeedijk 127</p>
+          <p>1012 AW Amsterdam</p>
+          <p data-i18n="footer.hours">Daily · 10:00 – 22:00</p>
+          <a href="https://www.instagram.com/miyabimatcha.amsterdam/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n-html="footer.rights">© <span id="year">2026</span> Miyabi Matcha Amsterdam. All rights reserved.</span>
+        <span class="footer__credit">sample by <a href="https://www.instagram.com/_ziyad._/" target="_blank" rel="noopener">_ziyad._</a> @ code-caffeine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

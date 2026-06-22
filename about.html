@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Miyabi Matcha Amsterdam</title>
+  <meta name="description" content="Rooted in Japanese tradition and attuned to modern life. Miyabi Matcha creates meaningful connections between Japanese tea artisans and Europe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav nav--solid">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">雅</span>
+      <span class="brand__txt">
+        <span class="brand__name">Miyabi Matcha</span>
+        <span class="brand__sub">Amsterdam</span>
+      </span>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="matcha.html" data-i18n="nav.matcha">Our Matcha</a></li>
+      <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+      <li class="nav__lang-li">
+        <div class="lang" role="group" data-i18n-aria="nav.language" aria-label="Language">
+          <button type="button" class="lang__btn" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang__btn" data-lang-option="nl" aria-pressed="false">NL</button>
+          <button type="button" class="lang__btn" data-lang-option="ja" aria-pressed="false">JA</button>
+          <button type="button" class="lang__btn" data-lang-option="fr" aria-pressed="false">FR</button>
+        </div>
+      </li>
+    </ul>
+    <button class="nav__toggle" data-i18n-aria="nav.openMenu" aria-label="Open menu"
+            aria-controls="nav-links" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== PAGE HEAD ===================== -->
+  <header class="pagehead">
+    <span class="kanji-bg">雅</span>
+    <p class="eyebrow" data-i18n="ab.eyebrow">雅 · Miyabi</p>
+    <h1 data-i18n="ab.h1">Our Story</h1>
+    <p class="lead center" data-i18n="ab.lead" style="margin:.6rem auto 0;">Rooted in Japanese tradition and attuned to modern life.</p>
+  </header>
+
+  <!-- ===================== PHILOSOPHY ===================== -->
+  <section class="section">
+    <div class="wrap center">
+      <p class="quote" style="text-align:center;">
+        <span class="reveal" data-i18n="ab.quote" style="display:block;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.5rem,3.4vw,2.5rem);line-height:1.45;max-width:24ch;margin-inline:auto;color:var(--ink);">
+          We cherish the beauty that lives in quiet moments.
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== SPLIT: ARTISANS ===================== -->
+  <section class="section bg-paper">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__media reveal">
+          <img src="https://images.pexels.com/photos/2321839/pexels-photo-2321839.jpeg?auto=compress&cs=tinysrgb&w=1100"
+               alt="A tea farmer hand-picking fresh leaves on a plantation" onerror="this.style.opacity=0" />
+        </div>
+        <div class="split__body reveal" data-delay="1">
+          <p class="eyebrow" data-i18n="ab.farmEyebrow">From farm to cup</p>
+          <h2 style="margin-top:.5rem;" data-i18n="ab.farmH2">A connection across continents</h2>
+          <div class="divider"></div>
+          <p data-i18n="ab.farmP1">Our tea is more than a drink — it’s a moment to restore the mind and spirit.
+            In the rush of everyday life, we offer a quiet pause, a gentle breath.</p>
+          <p data-i18n="ab.farmP2">Our hope is to create meaningful connections between Japanese tea artisans and Europe:
+            honouring the people and the place behind every harvest, and carrying their craft
+            to a new table here in Amsterdam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUES ===================== -->
+  <section class="section bg-ink">
+    <div class="wrap">
+      <div class="cards">
+        <article class="card reveal" style="background:transparent;border-color:rgba(243,241,230,.18);text-align:center;">
+          <div class="card__body">
+            <p class="card__price kanji" style="color:var(--matcha-bright);">静</p>
+            <h3 class="card__title" style="color:#f6f4ea;" data-i18n="ab.v1Title">Stillness</h3>
+            <p class="card__desc" style="color:rgba(243,241,230,.72);" data-i18n="ab.v1Desc">A quiet pause in the middle of a busy day — that is what a bowl of matcha offers.</p>
+          </div>
+        </article>
+        <article class="card reveal" data-delay="1" style="background:transparent;border-color:rgba(243,241,230,.18);text-align:center;">
+          <div class="card__body">
+            <p class="card__price kanji" style="color:var(--matcha-bright);">真</p>
+            <h3 class="card__title" style="color:#f6f4ea;" data-i18n="ab.v2Title">Authenticity</h3>
+            <p class="card__desc" style="color:rgba(243,241,230,.72);" data-i18n="ab.v2Desc">Sourced directly from trusted Japanese farms — real leaves, real tradition.</p>
+          </div>
+        </article>
+        <article class="card reveal" data-delay="2" style="background:transparent;border-color:rgba(243,241,230,.18);text-align:center;">
+          <div class="card__body">
+            <p class="card__price kanji" style="color:var(--matcha-bright);">繋</p>
+            <h3 class="card__title" style="color:#f6f4ea;" data-i18n="ab.v3Title">Connection</h3>
+            <p class="card__desc" style="color:rgba(243,241,230,.72);" data-i18n="ab.v3Desc">Bridging Japanese tea artisans and Europe, one cup at a time.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== JOURNEY ===================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split split--reverse">
+        <div class="split__media reveal">
+          <img src="https://images.pexels.com/photos/5946969/pexels-photo-5946969.jpeg?auto=compress&cs=tinysrgb&w=1100"
+               alt="A glass of freshly made iced matcha latte" onerror="this.style.opacity=0" />
+        </div>
+        <div class="split__body reveal" data-delay="1">
+          <p class="eyebrow" data-i18n="ab.jEyebrow">Paris → Amsterdam</p>
+          <h2 style="margin-top:.5rem;" data-i18n="ab.jH2">Now pouring on the Zeedijk</h2>
+          <div class="divider"></div>
+          <p data-i18n="ab.jP">Born in Paris, Miyabi Matcha has found a new home in Amsterdam’s Chinatown.
+            Step in from the Zeedijk for a freshly whisked bowl and a gentle moment of calm.</p>
+          <a href="index.html#visit" class="btn" data-i18n="ab.jCta">Come visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section--tight bg-cream2">
+    <div class="wrap">
+      <div class="gallery">
+        <figure class="reveal"><img src="https://images.pexels.com/photos/5672690/pexels-photo-5672690.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Sunlit tea bushes on a plantation" onerror="this.style.opacity=0" /></figure>
+        <figure class="reveal" data-delay="1"><img src="https://images.pexels.com/photos/2321839/pexels-photo-2321839.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Hand-picking fresh tea leaves" onerror="this.style.opacity=0" /></figure>
+        <figure class="reveal" data-delay="2"><img src="https://images.pexels.com/photos/8474182/pexels-photo-8474182.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A bowl of ceremonial matcha with a bamboo whisk" onerror="this.style.opacity=0" /></figure>
+        <figure class="reveal" data-delay="3"><img src="https://images.pexels.com/photos/8134134/pexels-photo-8134134.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A signature strawberry matcha drink" onerror="this.style.opacity=0" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="brand__mark kanji">雅</span>
+          <p data-i18n="footer.brandText">Miyabi Matcha — bringing the authentic taste of Japan to your cup, from Paris to Amsterdam.</p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="matcha.html" data-i18n="nav.matcha">Our Matcha</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.visit">Visit</h4>
+          <p>Zeedijk 127</p>
+          <p>1012 AW Amsterdam</p>
+          <p data-i18n="footer.hours">Daily · 10:00 – 22:00</p>
+          <a href="https://www.instagram.com/miyabimatcha.amsterdam/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n-html="footer.rights">© <span id="year">2026</span> Miyabi Matcha Amsterdam. All rights reserved.</span>
+        <span class="footer__credit">sample by <a href="https://www.instagram.com/_ziyad._/" target="_blank" rel="noopener">_ziyad._</a> @ code-caffeine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

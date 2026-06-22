@@ -1,0 +1,9 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+
+# Local Claude Code config (machine-specific: preview servers, memory, settings)
+.claude/
