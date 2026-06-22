@@ -175,7 +175,11 @@ h1,h2,h3,h4{ font-family:var(--serif); font-weight:400; line-height:1.1; letter-
    ========================================================= */
 .hero{
   position:relative; min-height:100svh;
-  display:flex; align-items:center;
+  display:flex; align-items:safe center;
+  /* reserve room for the fixed nav up top so hero content can never rise
+     into it; `safe center` keeps a tall content block pinned below the
+     padding instead of bleeding upward past it on short/narrow screens */
+  padding-top:clamp(6rem, 14vh, 8rem); padding-bottom:clamp(3rem, 8vh, 5rem);
   color:#f6f4ea; overflow:hidden;
 }
 .hero__media{ position:absolute; inset:0; z-index:0; }
